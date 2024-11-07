@@ -1,0 +1,22 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <h3><%= listing.title %> situated in <%= listing.location %></h3>
+    <p><%= listing.description %></p>
+    
+    <p><b>Activities:</b></p>
+    <ul>
+        <% for (let activity of listing.activities) { %>
+            <li><%= activity %></li>
+        <% } %>
+    </ul>
+    
+    <p><b>Best Time to Visit:</b> <%= listing.bestTimeToVisit %></p>
+    
+    <p><b>Travel Tips:</b></p>
+    <ul>
+        <% for (let tip of listing.tips) { %>
+            <li><%= tip %></li>
+        <% } %>
+    </ul>
+</body>
+

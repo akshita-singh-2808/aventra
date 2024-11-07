@@ -1,0 +1,158 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <form method="POST" action="/listings">
+        <input type="date" name="Date" placeholder="Add Date">
+        <br> 
+        <h6>Country:</h6> <input name="Country" placeholder="Destination Country" type="text">
+        <br>
+        <h6>location:</h6><input type="text" name="Location" placeholder="Where in country" type="text"> 
+        <br> 
+        <input type="number" name="Duration" placeholder="Trip duration">
+        <% layout("/layouts/boilerplate") %>
+<body>
+    <form method="POST" action="/listings">
+        <input type="date" name="Date" placeholder="Add Date">
+        <br> 
+        <h6>Country:</h6> <input name="Country" placeholder="Destination Country" type="text">
+        <br>
+        <h6>Location:</h6><input type="text" name="Location" placeholder="Where in country" type="text"> 
+        <br> 
+        <input type="number" name="Duration" placeholder="Trip duration">
+        <br>
+        <h6>Daily Activities:</h6>
+<select name="Activities" id="activities-dropdown" onchange="toggleOtherActivityInput()">
+    <option value="" disabled selected>Select Activity</option>
+    <option value="Reading">Reading</option>
+    <option value="Writing">Writing</option>
+    <option value="Walking">Walking</option>
+    <option value="Jogging">Jogging</option>
+    <option value="Exercising">Exercising</option>
+    <option value="Cooking">Cooking</option>
+    <option value="Baking">Baking</option>
+    <option value="Cleaning">Cleaning</option>
+    <option value="Shopping">Shopping</option>
+    <option value="Studying">Studying</option>
+    <option value="Listening to Music">Listening to Music</option>
+    <option value="Watching TV">Watching TV</option>
+    <option value="Watching Movies">Watching Movies</option>
+    <option value="Playing Video Games">Playing Video Games</option>
+    <option value="Gardening">Gardening</option>
+    <option value="Drawing">Drawing</option>
+    <option value="Painting">Painting</option>
+    <option value="Knitting">Knitting</option>
+    <option value="Sewing">Sewing</option>
+    <option value="Doing Puzzles">Doing Puzzles</option>
+    <option value="Meditating">Meditating</option>
+    <option value="Yoga">Yoga</option>
+    <option value="Surfing the Internet">Surfing the Internet</option>
+    <option value="Browsing Social Media">Browsing Social Media</option>
+    <option value="Playing Board Games">Playing Board Games</option>
+    <option value="Chatting with Friends">Chatting with Friends</option>
+    <option value="Spending Time with Family">Spending Time with Family</option>
+    <option value="Taking Photos">Taking Photos</option>
+    <option value="Visiting Friends">Visiting Friends</option>
+    <option value="Going to the Park">Going to the Park</option>
+    <option value="Having a Picnic">Having a Picnic</option>
+    <option value="Going for a Drive">Going for a Drive</option>
+    <option value="Attending a Class">Attending a Class</option>
+    <option value="Cleaning the House">Cleaning the House</option>
+    <option value="Organizing Stuff">Organizing Stuff</option>
+    <option value="Taking a Nap">Taking a Nap</option>
+    <option value="Going to the Gym">Going to the Gym</option>
+    <option value="Visiting a Museum">Visiting a Museum</option>
+    <option value="Going to a Concert">Going to a Concert</option>
+    <option value="Fishing">Fishing</option>
+    <option value="Cooking Dinner">Cooking Dinner</option>
+    <option value="Doing Laundry">Doing Laundry</option>
+    <option value="Grocery Shopping">Grocery Shopping</option>
+    <option value="Making Crafts">Making Crafts</option>
+    <option value="Going for a Bike Ride">Going for a Bike Ride</option>
+    <option value="Going Swimming">Going Swimming</option>
+    <option value="Walking the Dog">Walking the Dog</option>
+    <option value="Running Errands">Running Errands</option>
+    <option value="Planning the Week">Planning the Week</option>
+    <option value="Doing Chores">Doing Chores</option>
+    <option value="Eating Out">Eating Out</option>
+    <option value="Going to the Beach">Going to the Beach</option>
+    <option value="Visiting the Library">Visiting the Library</option>
+    <option value="Enjoying a Bath">Enjoying a Bath</option>
+    <option value="Playing Sports">Playing Sports</option>
+    <option value="Volunteering">Volunteering</option>
+    <option value="Going to Church">Going to Church</option>
+    <option value="Talking to Neighbors">Talking to Neighbors</option>
+    <option value="Checking Emails">Checking Emails</option>
+    <option value="Writing in a Journal">Writing in a Journal</option>
+    <option value="Planning a Trip">Planning a Trip</option>
+    <option value="Listening to Podcasts">Listening to Podcasts</option>
+    <option value="Attending a Workshop">Attending a Workshop</option>
+    <option value="Practicing a Hobby">Practicing a Hobby</option>
+    <option value="Taking a Walk in Nature">Taking a Walk in Nature</option>
+    <option value="Playing an Instrument">Playing an Instrument</option>
+    <option value="Making a Scrapbook">Making a Scrapbook</option>
+    <option value="Hiking">Hiking</option>
+    <option value="Meditation Session">Meditation Session</option>
+    <option value="Going to the Movies">Going to the Movies</option>
+    <option value="Creating a Vision Board">Creating a Vision Board</option>
+    <option value="Practicing Mindfulness">Practicing Mindfulness</option>
+    <option value="Beach Day">Beach Day</option>
+    <option value="Cultural Tour">Cultural Tour</option>
+    <option value="Camping">Camping</option>
+    <option value="Swimming">Swimming</option>
+    <option value="Snorkeling">Snorkeling</option>
+    <option value="Surfing">Surfing</option>
+    <option value="Kayaking">Kayaking</option>
+    <option value="Biking">Biking</option>
+    <option value="City Tour">City Tour</option>
+    <option value="Museum Visit">Museum Visit</option>
+    <option value="Art Gallery">Art Gallery</option>
+    <option value="Wildlife Safari">Wildlife Safari</option>
+    <option value="Rock Climbing">Rock Climbing</option>
+    <option value="Wine Tasting">Wine Tasting</option>
+    <option value="Cooking Class">Cooking Class</option>
+    <option value="Yoga Retreat">Yoga Retreat</option>
+    <option value="Spa Day">Spa Day</option>
+    <option value="Attending a Festival">Attending a Festival</option>
+    <option value="Concert">Concert</option>
+    <option value="Live Theater">Live Theater</option>
+    <option value="Scenic Drive">Scenic Drive</option>
+    <option value="Historical Site Visit">Historical Site Visit</option>
+    <option value="Farm Tour">Farm Tour</option>
+    <option value="Nature Walk">Nature Walk</option>
+    <option value="Bird Watching">Bird Watching</option>
+    <option value="Stargazing">Stargazing</option>
+    <option value="Ice Skating">Ice Skating</option>
+    <option value="Bowling">Bowling</option>
+    <option value="Mini Golf">Mini Golf</option>
+    <option value="Go-Kart Racing">Go-Kart Racing</option>
+    <option value="Visiting a Zoo">Visiting a Zoo</option>
+    <option value="Amusement Park">Amusement Park</option>
+    <option value="Visiting a Botanical Garden">Visiting a Botanical Garden</option>
+    <option value="Exploring Caves">Exploring Caves</option>
+    <option value="Hot Air Balloon Ride">Hot Air Balloon Ride</option>
+    <option value="Zip Lining">Zip Lining</option>
+    <option value="Horseback Riding">Horseback Riding</option>
+    <option value="ATV Riding">ATV Riding</option>
+    <option value="Scenic Train Ride">Scenic Train Ride</option>
+    <option value="Whale Watching">Whale Watching</option>
+    <option value="Dolphin Watching">Dolphin Watching</option>
+    <option value="Scenic Boat Cruise">Scenic Boat Cruise</option>
+    <option value="Exploring Local Markets">Exploring Local Markets</option>
+    <option value="Photography Walk">Photography Walk</option>
+    <option value="Road Trip">Road Trip</option>
+    <option value="Visiting a Lighthouse">Visiting a Lighthouse</option>
+    <option value="Food Truck Tour">Food Truck Tour</option>
+    <option value="Street Art Tour">Street Art Tour</option>
+    <option value="Architectural Tour">Architectural Tour</option>
+    <option value="Exploring National Parks">Exploring National Parks</option>
+    <option value="Botanical Garden Tour">Botanical Garden Tour</option>
+    <option value="Meditation Retreat">Meditation Retreat</option>
+    <option value="Painting Class">Painting Class</option>
+    <option value="Pottery Class">Pottery Class</option>
+    <option value="Learning a New Dance">Learning a New Dance</option>
+    <option value="Visiting a Planetarium">Visiting a Planetarium</option>
+    <option value="Participating in a Workshop">Participating in a Workshop</option>
+</select>
+  <button>Add My Trip</button>
+    </form>
+</body>
+
