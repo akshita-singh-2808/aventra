@@ -65,14 +65,19 @@ text-decoration: underline;
     margin-top: auto
 
 }
+
 .card{
+    width: 100%;
+    overflow: hidden;
     border: none;
     margin-bottom: 2rem;
-    
+
 }
 .card-img-top{
     width: 100% !important;
+    height: 200px  !important;
     object-fit: cover !important;
+
 }
 .card-body{
     padding: 0 !important;
@@ -80,6 +85,7 @@ text-decoration: underline;
 }
 .card-text{
     font-weight:400 ;
+
 }
 .plus-jakarta-sans-body {
     font-family: "Plus Jakarta Sans", serif !important; 
@@ -87,9 +93,7 @@ text-decoration: underline;
     font-weight: 300 !important;
     font-style: normal !important;
 }
-.card-loc,.card-title{
-    text-decoration: none;
-}
+
 .card-img-overlay{
     opacity:0;
 }
@@ -97,4 +101,8 @@ text-decoration: underline;
 
     opacity:0.1;
     background-color: white;
+}
+
+.card-loc{
+    text-decoration: none;
 }
