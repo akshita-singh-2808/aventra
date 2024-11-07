@@ -1,26 +1,18 @@
 <% layout("/layouts/boilerplate") %>
+
 <body>
     <form method="POST" action="/listings">
+        <h6>when are you plannning to go?</h6>
         <input type="date" name="Date" placeholder="Add Date">
-        <br> 
+        <br> <br> 
         <h6>Country:</h6> <input name="Country" placeholder="Destination Country" type="text">
-        <br>
-        <h6>location:</h6><input type="text" name="Location" placeholder="Where in country" type="text"> 
-        <br> 
-        <input type="number" name="Duration" placeholder="Trip duration">
-        <% layout("/layouts/boilerplate") %>
-<body>
-    <form method="POST" action="/listings">
-        <input type="date" name="Date" placeholder="Add Date">
-        <br> 
-        <h6>Country:</h6> <input name="Country" placeholder="Destination Country" type="text">
-        <br>
+        <br>  <br> 
         <h6>Location:</h6><input type="text" name="Location" placeholder="Where in country" type="text"> 
-        <br> 
-        <input type="number" name="Duration" placeholder="Trip duration">
-        <br>
+        <br>   <br> 
+        <h6>Trip duration:</h6><input type="number" name="Duration" placeholder="Trip duration">
+        <br>  <br> 
         <h6>Daily Activities:</h6>
-<select name="Activities" id="activities-dropdown" onchange="toggleOtherActivityInput()">
+        <select name="Activities" id="activities-dropdown" onchange="toggleOtherActivityInput()">
     <option value="" disabled selected>Select Activity</option>
     <option value="Reading">Reading</option>
     <option value="Writing">Writing</option>
@@ -151,8 +143,9 @@
     <option value="Learning a New Dance">Learning a New Dance</option>
     <option value="Visiting a Planetarium">Visiting a Planetarium</option>
     <option value="Participating in a Workshop">Participating in a Workshop</option>
-</select>
-  <button>Add My Trip</button>
+        </select>
+        <br>   <br> 
+        <button>Add Trip</button>
     </form>
 </body>
 

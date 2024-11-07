@@ -1,19 +1,26 @@
 <% layout("/layouts/boilerplate") %>
 <body>
     <div class="container">
-        <h3>All Listings</h3>
-        <form method="GET" action="/listings/new"><button>Add Trip</button></form>
+        <h3>Every journey writes a story;let aventra be the first chapter.</h3>
+        <form method="GET" action="/listings/new">
+            <button  class="btn btn-primary"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+            type="submit">
+                Add Trip
+            </button>
+        </form>
+        <br>
         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
             <% for (let listing of allListings) { %>
-                <a href="/listings/<%= listing.id %>">
+                <a class="text" href="/listings/<%= listing.id %>">
                 <div class="col">
                     <div class="card" style="width: 100%;">
                         <img src="<%= listing.image %>" class="card-img-top" alt="location image">
                         <div class="card-img-overlay"></div>
                         <div class="card-body">
                             <div class="card-text">
-                            <p class="card-loc"><%= listing.location %></p>
-                            <h5 class="card-title"><%= listing.title %></h5>
+                                <p class="card-loc"><%= listing.location %></p>
+                                <h5 class="card-title"><%= listing.title %></h5>
+                                 <p class=""><%=listing.description%></p>
                             </div>
                         </div>
                     </div>

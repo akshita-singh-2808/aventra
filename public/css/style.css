@@ -2,6 +2,7 @@ html,body {
     background-color: #EFE7DA !important;
     height: 100%;
     margin: 0;
+    
 }
 
 body{
@@ -31,7 +32,6 @@ body{
     justify-content: center;
     
 }
-
 
 .f-info-socials a:hover{
     font-size: 1.4rem;
@@ -80,20 +80,17 @@ text-decoration: underline;
 
 }
 .card-body{
-    padding: 0 !important;
+    /* padding: 0 !important; */
+   height:175px
 
 }
 .card-text{
     font-weight:400 ;
 
 }
-.plus-jakarta-sans-body {
-    font-family: "Plus Jakarta Sans", serif !important; 
-    font-optical-sizing: auto !important;
-    font-weight: 300 !important;
-    font-style: normal !important;
+.card-loc,.card-title{
+    text-decoration: none ;
 }
-
 .card-img-overlay{
     opacity:0;
 }
@@ -103,6 +100,14 @@ text-decoration: underline;
     background-color: white;
 }
 
-.card-loc{
+.btn-primary{
+    background-color: #E55812 !important;
+}
+
+.text{
     text-decoration: none;
+}
+
+.card-loc{
+    color: rgb(94, 94, 234);
 }
