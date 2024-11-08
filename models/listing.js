@@ -42,7 +42,7 @@ const listingSchema = new Schema({
     tips: {
         type: [String], // Array of travel tips
         default: [],
-    },
+    }
 }); // Adds createdAt and updatedAt timestamps
 
 const Listing = mongoose.model("Listing", listingSchema);
